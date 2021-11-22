@@ -1,5 +1,5 @@
 header{
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -45,8 +45,23 @@ header .search .fa-search{
 }
 
 .hide{
-  display: none;
+  /* display: none; */
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
 
 .menu:hover + .hide{
   display: block;
@@ -56,21 +71,25 @@ header .search .fa-search{
   text-decoration: none;
 }
 
+.imgRelative{
+  position: relative;
+}
+
 .picBtn{
     position: absolute; 
-    top:15px; 
+    top:20px; 
     right: 20px;
 }
 
 .picBtnFrom{
   position: absolute; 
-  bottom: 290px; 
+  bottom: 20px; 
   left: 20px;
 }
 
 .heartIcon{
   position: absolute; 
-  bottom: 290px; 
+  bottom: 20px; 
   right: 20px;
 }
 

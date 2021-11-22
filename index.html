@@ -1,330 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="icon" href="./images/icons8-resort-50.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="./images/icons8-resort-50.png" type="image/gif" sizes="16x16">
 
-    <title>Bedroom Villas</title>
+  <title>Bedroom Villas</title>
 </head>
+
 <body>
 
-    <header>
-      <div >
-        <img id="menu" class="menu" src="./images/icons8-menu-50.png" alt="">
-        <div class="hide dropdown-menu">  
-          <ul class="list-group py-1" aria-labelledby="dropdownMenuButton1">
-            <li class="menuList"><a class="dropdown-item" href="#">Home</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">Bookmarked</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">List Your Property</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">About</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">FAQ</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">Blog</a></li>
-          </ul>
+  <header>
+    <div>
+      <div class="d-flex flex-row ">
+        <div class="dropdown">
+          <img id="menu" class="dropbtn" src="./images/icons8-menu-50.png" alt="">
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="#">Home</a>
+            <a class="dropdown-item" href="#">Bookmarked</a>
+            <a class="dropdown-item" href="#">List Your Property</a>
+            <a class="dropdown-item" href="#">About</a>
+            <a class="dropdown-item" href="#">FAQ</a>
+            <a class="dropdown-item" href="#">Blog</a>
+          </div>
         </div>
-        <a class="navbar-brand px-2 fw-bold fs-4" href="#"> <span><i class="fab fa-pagelines text-warning"></i></span> Bedroom<span class="text-warning">Villas</span></a>
-        <img id="mobileMenu"  class="menu" src="./images/icons8-menu-50.png" alt="">
-        <div id="mobileMenuList" class="hide dropdown-menu">  
-          <ul class="list-group py-1" aria-labelledby="dropdownMenuButton1">
-            <li class="menuList"><a class="dropdown-item" href="#">Home</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">Bookmarked</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">List Your Property</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">About</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">FAQ</a></li>
-            <li class="menuList"><a class="dropdown-item" href="#">Blog</a></li>
-          </ul>
-        </div>
+        <a class="navbar-brand px-2 fw-bold fs-4" href="#"> <span><i class="fab fa-pagelines text-warning"></i></span>
+          Bedroom<span class="text-warning">Villas</span></a>
       </div>
-      <!-- <ul class="navigation">
-        <li>
-          <a href="#">BedroomVillas</a>
-        </li>
-      </ul> -->
-      <div class="py-3 py-md-0">
-        <div class="d-flex flex-row">
-          <div class="search">
-            <input type="text" placeholder="Arizona, USA">
-            <i class="fas fa-search"></i>
-          </div>
-          <div>
-            <button type="button" class="btn btn-light border ms-md-2 text-muted"> <i class="far fa-calendar-alt text-primary p-1"></i> Check In</button>
-            <button type="button" class="btn btn-ligth border me-md-2 text-muted">Check Out</button>
-            <button id="search" class="btn btn-warning text-white me-md-2" type="submit">Search</button>
-            <button class="btn btn-primary me-md-2 border" type="submit">Filter</button>
-          </div>
-        </div>
+
+      <img id="mobileMenu" class="menu" src="./images/icons8-menu-50.png" alt="">
+      <div id="mobileMenuList" class="hide dropdown-menu">
+        <ul class="list-group py-1" aria-labelledby="dropdownMenuButton1">
+          <li class="menuList"><a class="dropdown-item" href="#">Home</a></li>
+          <li class="menuList"><a class="dropdown-item" href="#">Bookmarked</a></li>
+          <li class="menuList"><a class="dropdown-item" href="#">List Your Property</a></li>
+          <li class="menuList"><a class="dropdown-item" href="#">About</a></li>
+          <li class="menuList"><a class="dropdown-item" href="#">FAQ</a></li>
+          <li class="menuList"><a class="dropdown-item" href="#">Blog</a></li>
+        </ul>
       </div>
-    </header>
-    
-    <section>
-      <!-- card -->
-      <div class="mt-4 pt-5 px-3">
-        <p class="m-2">Vacation Rentals in Arizona <span class="text-warning"> | <a href="#" class="text-warning breadcrumbAnchor">USA</a> > <a href="#" class="text-warning breadcrumbAnchor">Arizona</a></span></p>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="card border p-2 mb-2">
-                <img src="./images/alexander-kaunas--4BULVnHGg8-unsplash.jpg" class="card-img-top" alt="...">
-                <button class="btn btn-light picBtn btn-sm">More Photos <i class="fas fa-external-link-alt p-1"></i></button>
-                <button class="btn btn-light picBtnFrom btn-sm">From $150</button>
-                <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
-                <div class="card-body">
-                  <h5 class="card-title">The Nautical Beachfornt Resort</h5>
-                </div>
-                <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                  <div>
-                      <p>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        <i class="fas fa-star text-warning"></i>
-                        683 reviews
-                        </p>
-                        <p>Sleeps 300</p>
-                        <small class="text-primary">Arizona > Lake Havasu City</small>
-                  </div>
-                  <div>
-                      <button class="btn btn-warning">View Details</button>
-                  </div>
-                </div>
-
-                <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p class="text-muted">
-                            <i class="fas fa-check p-1"></i>
-                            View <i class="fas fa-check p-1"></i> Child Friendly
-                        </p>      
-                    </div>
-                    <div>
-                        <p class="text-muted">BC-36711</p>
-                    </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="card border p-2 mb-2">
-                <img src="./images/Optimized-the-anam-J9O3WcJ5N74-unsplash.jpg" class="card-img-top" alt="...">
-                <button class="btn btn-light picBtn btn-sm">More Photos <i class="fas fa-external-link-alt p-1"></i></button>
-                <button class="btn btn-light picBtnFrom btn-sm">From $150</button>
-                <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
-                <div class="card-body">
-                  <h5 class="card-title">Bluegreen Vacations Cibola Resort</h5>
-                </div>
-                
-                <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          1000 reviews
-                          </p>
-                          <p>Sleeps 400</p>
-                          <small class="text-primary">Central Arizona > Sun City West</small>
-                    </div>
-                    <div>
-                        <button class="btn btn-warning">View Details</button>
-                    </div>
-                </div>
-
-                <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p class="text-muted">
-                            <i class="fas fa-check p-1"></i>
-                            View <i class="fas fa-check p-1"></i> Child Friendly
-                        </p>      
-                    </div>
-                    <div>
-                        <p class="text-muted">BC-36711</p>
-                    </div>
-                </div>
-              </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="card border p-2 mb-2">
-                <img src="./images/Optimized-saad-khan-I5c9i-hooag-unsplash.jpg" class="card-img-top" alt="...">
-                <button class="btn btn-light picBtn btn-sm">More Photos <i class="fas fa-external-link-alt p-1"></i></button>
-                <button class="btn btn-light picBtnFrom btn-sm">From $150</button>
-                <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
-                <div class="card-body">
-                  <h5 class="card-title">Westward Look Wyndham Resort</h5>
-                </div>
-                
-                <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          300 reviews
-                          </p>
-                          <p>Sleeps 100</p>
-                          <small class="text-primary">Arizona > Casas Adobes</small>
-                    </div>
-                    <div>
-                        <button class="btn btn-warning">View Details</button>
-                    </div>
-                </div>
-
-                <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p class="text-muted">
-                            <i class="fas fa-check p-1"></i>
-                            View <i class="fas fa-check p-1"></i> Child Friendly
-                        </p>      
-                    </div>
-                    <div>
-                        <p class="text-muted">BC-36711</p>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="card border p-2 mb-2">
-                  <img src="./images/roberto-nickson-EeeKjwm2vDo-unsplash.jpg" class="card-img-top" alt="...">
-                  <button class="btn btn-light picBtn btn-sm">More Photos <i class="fas fa-external-link-alt p-1"></i></button>
-                  <button class="btn btn-light picBtnFrom btn-sm">From $150</button>
-                  <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
-                  <div class="card-body">
-                    <h5 class="card-title">Wekopa Casiono Resort</h5>
-                  </div>
-                  
-                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          900 reviews
-                          </p>
-                          <p>Sleeps 200</p>
-                          <small class="text-primary">Arizona > Lake Havasu City</small>
-                    </div>
-                    <div>
-                        <button class="btn btn-warning">View Details</button>
-                    </div>
-                  </div>
-
-                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p class="text-muted">
-                            <i class="fas fa-check p-1"></i>
-                            View <i class="fas fa-check p-1"></i> Child Friendly
-                        </p>      
-                    </div>
-                    <div>
-                        <p class="text-muted">BC-36711</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card border p-2 mb-2">
-                  <img src="./images/artie-kostenko-a6EzvPjXfBY-unsplash.jpg" class="card-img-top" alt="...">
-                  <button class="btn btn-light picBtn btn-sm">More Photos <i class="fas fa-external-link-alt p-1"></i></button>
-                  <button class="btn btn-light picBtnFrom btn-sm">From $150</button>
-                  <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
-                  <div class="card-body">
-                    <h5 class="card-title">The Lodge at Ventana Canyon</h5>
-                  </div>
-                  
-                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          100 reviews
-                          </p>
-                          <p>Sleeps 500</p>
-                          <small class="text-primary">Arizona > Lake Havasu City</small>
-                    </div>
-                    <div>
-                        <button class="btn btn-warning">View Details</button>
-                    </div>
-                  </div>
-
-                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p class="text-muted">
-                            <i class="fas fa-check p-1"></i>
-                            View <i class="fas fa-check p-1"></i> Child Friendly
-                        </p>      
-                    </div>
-                    <div>
-                        <p class="text-muted">BC-36711</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card border p-2 mb-2" >
-                  <img src="./images/helena-lopes-amJwq0XLZ_8-unsplash.jpg" class="card-img-top" alt="...">
-                  <button class="btn btn-light picBtn btn-sm">More Photos <i class="fas fa-external-link-alt p-1"></i></button>
-                  <button class="btn btn-light picBtnFrom btn-sm">From $150</button>
-                  <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
-                  <div class="card-body">
-                    <h5 class="card-title">Hilton Phoenix Resort</h5>
-                  </div>
-                  
-                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          <i class="fas fa-star text-warning"></i>
-                          340 reviews
-                          </p>
-                          <p>Sleeps 250</p>
-                          <small class="text-primary">Arizona > Lake Havasu City</small>
-                    </div>
-                    <div>
-                        <button class="btn btn-warning">View Details</button>
-                    </div>
-                  </div>
-
-                  <div class="card-body d-flex flex-row align-items-center justify-content-between">
-                    <div>
-                        <p class="text-muted">
-                            <i class="fas fa-check p-1"></i>
-                            View <i class="fas fa-check p-1"></i> Child Friendly
-                        </p>      
-                    </div>
-                    <div>
-                        <p class="text-muted">BC-36711</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-          </div>
     </div>
-    </section>
+
+    <div class="py-3 py-md-0">
+      <div class="d-flex flex-row">
+        <div class="search">
+          <input type="text" placeholder="Arizona, USA">
+          <i class="fas fa-search"></i>
+        </div>
+        <div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-light border ms-md-2 text-muted"> <i
+                class="far fa-calendar-alt text-primary"></i> Check In</button>
+            <button type="button" class="btn btn-ligth border me-md-2 text-muted">Check Out</button>
+          </div>
+          <button id="search" class="btn btn-warning text-white me-md-2" type="submit">Search</button>
+          <button class="btn btn-primary me-md-2 border" type="submit">Filter</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <!-- card -->
+    <div class="px-3">
+      <p class="m-2">Vacation Rentals in Arizona <span class="text-warning"> | <a href="#"
+            class="text-warning breadcrumbAnchor">USA</a> > <a href="#"
+            class="text-warning breadcrumbAnchor">Arizona</a></span></p>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card border p-2 mb-2">
+            <div class="imgRelative">
+              <img src="./images/alexander-kaunas--4BULVnHGg8-unsplash.jpg" class="card-img-top " alt="...">
+              <button class="btn btn-light picBtn btn-sm">More Photos <i
+                  class="fas fa-external-link-alt p-1"></i></button>
+              <button class="btn btn-light picBtnFrom btn-sm">From <span class="fw-bold">&#2547</span> 150</button>
+              <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">The Nautical Beachfornt Resort</h5>
+            </div>
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  683 reviews
+                </p>
+                <p>Sleeps 300</p>
+                <small class="text-primary">Arizona > Lake Havasu City</small>
+              </div>
+              <div>
+                <button class="btn btn-warning">Details</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p class="text-muted">
+                  <i class="fas fa-check p-1"></i>
+                  View <i class="fas fa-check p-1"></i> Child Friendly
+                </p>
+              </div>
+              <div>
+                <p class="text-muted">BC-36711</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border p-2 mb-2">
+            <div class="imgRelative">
+              <img src="./images/Optimized-the-anam-J9O3WcJ5N74-unsplash.jpg" class="card-img-top" alt="...">
+              <button class="btn btn-light picBtn btn-sm">More Photos <i
+                  class="fas fa-external-link-alt p-1"></i></button>
+              <button class="btn btn-light picBtnFrom btn-sm">From <span class="fw-bold">&#2547</span> 150</button>
+              <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bluegreen Vacations Cibola Resort</h5>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  1000 reviews
+                </p>
+                <p>Sleeps 400</p>
+                <small class="text-primary">Central Arizona > Sun City West</small>
+              </div>
+              <div>
+                <button class="btn btn-warning">Details</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p class="text-muted">
+                  <i class="fas fa-check p-1"></i>
+                  View <i class="fas fa-check p-1"></i> Child Friendly
+                </p>
+              </div>
+              <div>
+                <p class="text-muted">BC-36711</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border p-2 mb-2">
+            <div class="imgRelative">
+              <img src="./images/Optimized-saad-khan-I5c9i-hooag-unsplash.jpg" class="card-img-top" alt="...">
+              <button class="btn btn-light picBtn btn-sm">More Photos <i
+                  class="fas fa-external-link-alt p-1"></i></button>
+              <button class="btn btn-light picBtnFrom btn-sm">From <span class="fw-bold">&#2547</span> 150</button>
+              <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Westward Look Wyndham Resort</h5>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  300 reviews
+                </p>
+                <p>Sleeps 100</p>
+                <small class="text-primary">Arizona > Casas Adobes</small>
+              </div>
+              <div>
+                <button class="btn btn-warning">Details</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p class="text-muted">
+                  <i class="fas fa-check p-1"></i>
+                  View <i class="fas fa-check p-1"></i> Child Friendly
+                </p>
+              </div>
+              <div>
+                <p class="text-muted">BC-36711</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card border p-2 mb-2">
+            <div class="imgRelative">
+              <img src="./images/roberto-nickson-EeeKjwm2vDo-unsplash.jpg" class="card-img-top" alt="...">
+              <button class="btn btn-light picBtn btn-sm">More Photos <i
+                  class="fas fa-external-link-alt p-1"></i></button>
+              <button class="btn btn-light picBtnFrom btn-sm">From <span class="fw-bold">&#2547</span> 150</button>
+              <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Wekopa Casiono Resort</h5>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  900 reviews
+                </p>
+                <p>Sleeps 200</p>
+                <small class="text-primary">Arizona > Lake Havasu City</small>
+              </div>
+              <div>
+                <button class="btn btn-warning">Details</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p class="text-muted">
+                  <i class="fas fa-check p-1"></i>
+                  View <i class="fas fa-check p-1"></i> Child Friendly
+                </p>
+              </div>
+              <div>
+                <p class="text-muted">BC-36711</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border p-2 mb-2">
+            <div class="imgRelative">
+              <img src="./images/artie-kostenko-a6EzvPjXfBY-unsplash.jpg" class="card-img-top" alt="...">
+              <button class="btn btn-light picBtn btn-sm">More Photos <i
+                  class="fas fa-external-link-alt p-1"></i></button>
+              <button class="btn btn-light picBtnFrom btn-sm">From <span class="fw-bold">&#2547</span> 150</button>
+              <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">The Lodge at Ventana Canyon</h5>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  100 reviews
+                </p>
+                <p>Sleeps 500</p>
+                <small class="text-primary">Arizona > Lake Havasu City</small>
+              </div>
+              <div>
+                <button class="btn btn-warning">Details</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p class="text-muted">
+                  <i class="fas fa-check p-1"></i>
+                  View <i class="fas fa-check p-1"></i> Child Friendly
+                </p>
+              </div>
+              <div>
+                <p class="text-muted">BC-36711</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card border p-2 mb-2">
+            <div class="imgRelative">
+              <img src="./images/helena-lopes-amJwq0XLZ_8-unsplash.jpg" class="card-img-top" alt="...">
+              <button class="btn btn-light picBtn btn-sm">More Photos <i
+                  class="fas fa-external-link-alt p-1"></i></button>
+              <button class="btn btn-light picBtnFrom btn-sm">From <span class="fw-bold">&#2547</span> 150</button>
+              <button class="heartIcon btn btn-secondary btn-sm"><i class="far fa-heart"></i></button>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Hilton Phoenix Resort</h5>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  340 reviews
+                </p>
+                <p>Sleeps 250</p>
+                <small class="text-primary">Arizona > Lake Havasu City</small>
+              </div>
+              <div>
+                <button class="btn btn-warning">Details</button>
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-row align-items-center justify-content-between">
+              <div>
+                <p class="text-muted">
+                  <i class="fas fa-check p-1"></i>
+                  View <i class="fas fa-check p-1"></i> Child Friendly
+                </p>
+              </div>
+              <div>
+                <p class="text-muted">BC-36711</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
