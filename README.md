@@ -10,3 +10,5 @@
  - CSS, Bootstrap 5
  - JS
  - Google Map
+
+ > Note: Google map won't work in live site
