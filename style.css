@@ -37,7 +37,7 @@ header .search input{
   padding: 0 10px 0 40px;
 }
 
-header .search .fa-search{
+header .search .myIcon{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -92,6 +92,74 @@ header .search .fa-search{
   bottom: 20px; 
   right: 20px;
 }
+
+/* calender 
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+    background:#846733;  
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+    color:#FFFFFF;
+    background:#846733;  
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .7em;
+	border-collapse: collapse;
+    font-family:verdana;
+	margin: 0 0 .4em;
+    color:#000000;
+    background:#FDF8E4;    
+}
+.ui-datepicker td {
+
+	border: 0;
+	padding: 1px;
+
+    
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .8em;
+	text-align: right;
+	text-decoration: none;
+}
+*/
+
+/* range slider
+.rangeslider{
+  width: 50%;
+}
+
+.myslider {
+  -webkit-appearance: none;
+  background: #749edd;
+  width: 80%;
+  height: 10px;
+  opacity: 2;
+  cursor: pointer;
+ }
+
+
+.myslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #34495E  ;
+  width: 25%;
+  height: 20px;
+}
+.myslider:hover {
+  opacity: 2;
+}
+*/
+
+/* map */
 
 @media (max-width: 991px)
 {
